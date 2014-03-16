@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="place description here" />
+<meta name="viewport" content="width = device-width;" /> 
+<!-- define the width of the page as no wider than the width of the viewport --> 
+
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="css/css/main.css" />
+<link rel="stylesheet" href="css/css/_print/main.css" media="print" />
+<!--[if IE]><link rel="stylesheet" href="_/css/_patches/win-ie-all.css" media="all" /><![endif]--> 
+	<!--[if IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie7.css" media="all" /><![endif]--> 
+	<!--[if lt IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie-old.css" media="all" /><![endif]--> 
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+<link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<link href="http://fonts.googleapis.com/css?family=Mako:regular" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="stylesheet" type="text/css" />
+<link rel="icon" href="favicon.png" />
+
+<!--[if IE ]><link rel="stylesheet" href="ie.css" media="all"/><![endif]--> 
+<title>The King's Head Official Website</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<body>
+	
+<div id="crossslide"></div> 				
+<div id="wrapper">
+	<div id="inner-wrap">
+		<header>
+     <section id="logo">
+     	   <h1><a href="#">King's Head </a></h1></section>
+     <!--logo ends here-->
+	</header>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <div id="main-content">
+	    <section id="frontpage">
+	      <article>
+		  <h1>Family Run <span class="coloured">Business</span> in the	Heart	of	Rural Wales</h1>
+	      </article>
+	</section><!--frontpage ends here-->
+<div id="panel">
+  <div class="panelblock">
+	<nav id="slide-nav">
+	<a href="accom.html">Letting</a> 
+	<a href="about.html">About Us</a>
+	<a href="location.html">Location</a>
+	<a href="contact.html">Contact</a>
+	<a href="ents.html">Entertain</a>
+    <a href="events.html">Events</a>
+	<a href="tour.html">Virtual Tour</a>
+	</nav>
+</div><!--panelblock ends here-->
+</div><!--panel ends here-->
+<div id="bottom-nav"><a class="btn-slide" href="#">
+		<div id="triangle-down"></div>
+		navigation</a></div>
+	</div><!--main-content ends here-->
+  </div><!--inner-wrap ends here-->
+</div><!--wrapper ends here-->
+	
+<!--scripts-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script src="js/cross-slide.js"></script>
+<script>
+$(document).ready(function(){
+	$(".btn-slide").click(function(){
+		$("#panel").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	 
+});
+</script>
+<div id="body-background"><img src="images/bg1.JPG" alt="interior full-size photo" width="1360" height="850" />
+
+<!--scripts-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="js/jquery.ez-bg-resize.js" charset="utf-8"></script> 
+<script src="js/lib.js" charset="utf-8"></script>
+<script src="js/scriptslideout.js"></script>
+<script>
+$(document).ready(function() {
+    $("#body-background").ezBgResize();
+});
+
+$(window).bind("resize", function(){
+    $("#body-background").ezBgResize();
+});
+</script>
+<script>
+//append click event to the UL list anchor tag
+$('#hero-slider ul a').click(function () {
+     
+    //reset all the items
+    $('#hero-slider ul a').removeClass('active');
+         
+    //set current item as active
+    $(this).addClass('active'); 
+         
+    //scroll it to the right position
+    $('.mask').scrollTo($(this).attr('rel'), 300);
+         
+    //disable click event
+       return false;        
+         
+});
+</script>
+<script>
+$(document).ready(function(){
+	$(".btn-slide").click(function(){
+		$("#panel-hours").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	 
+});
+</script>
+	</body>
+</html>
